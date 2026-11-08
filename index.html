@@ -4,41 +4,203 @@
     <meta charset="UTF-8">
     <title>Recipe</title>
     <!-- Made by Timothy Olazo on November 4, 2026 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+      html {
+        font-size: 16px;
+      }
+
+      body {
+        margin: 0;
+        padding: 3em 0;
+        background-color: #1f2a30;
+        color: antiquewhite;
+        font-family: "Lora", Georgia, serif;
+        font-size: 1em;
+        line-height: 1.7;
+        letter-spacing: 0.01em;
+      }
+
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 370px 810px;
+        grid-template-rows: auto auto;
+        column-gap: 20px;
+        row-gap: 2.5em;
+      }
+
+      .title-block {
+        grid-column: 1;
+        grid-row: 1;
+        padding-right: 1.5em;
+        align-self: start;
+      }
+
+      .photo {
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      .ingredients {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: start;
+      }
+
+      .preparation {
+        grid-column: 2;
+        grid-row: 2;
+        padding-left: 1em;
+      }
+
+      h1,
+      h2 {
+        font-family: "Playfair Display", Georgia, serif;
+        color: #f2c14e;
+        font-weight: 900;
+        line-height: 1.15;
+      }
+
+      h1 {
+        font-size: 2.75em;
+        margin: 0 0 0.5em;
+        letter-spacing: -0.01em;
+      }
+
+      h2 {
+        font-size: 1.9em;
+        font-weight: 700;
+        margin: 0 0 0.75em;
+      }
+
+      h3 {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-size: 0.95em;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: burlywood;
+        margin: 2em 0 0.5em;
+      }
+
+      .byline,
+      .yield {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-size: 0.95em;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        margin: 0 0 0.6em;
+      }
+
+      .byline {
+        font-weight: 400;
+      }
+
+      .yield {
+        font-weight: 700;
+        color: orange;
+      }
+
+      .photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 0.5em;
+      }
+
+      .ingredients ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: "Lora", Georgia, serif;
+        font-size: 1.05em;
+        line-height: 1.5;
+      }
+
+      .ingredients li {
+        padding: 0.6em 0 0.6em 1.4em;
+        position: relative;
+      }
+
+      .ingredients li:before {
+        content: "\2022";
+        color: orange;
+        font-weight: bold;
+        position: absolute;
+        left: 0.2em;
+      }
+
+      .preparation p {
+        font-size: 1.2em;
+        line-height: 1.75;
+        letter-spacing: 0.015em;
+        margin: 0 0 1.25em;
+      }
+
+      .preparation .source {
+        font-size: 0.85em;
+        font-style: italic;
+        margin-top: 2.5em;
+        word-break: break-all;
+      }
+
+      .source a {
+        color: #f2c14e;
+      }
+    </style>
   </head>
 
   <body>
-    Spinach, Tofu and Sesame Stir-Fry
+    <div class="container">
+      <div class="grid-item title-block">
+        <h1>Spinach, Tofu and Sesame Stir-Fry</h1>
+        <p class="byline">By: Martha Rose Shulman</p>
+        <p class="yield">Yield: 3 Servings</p>
+      </div>
 
-    By: Martha Rose Shulman
+      <div class="grid-item photo">
+        <img src="recipe.jpg" alt="A white plate of spinach, tofu and sesame stir-fry">
+      </div>
 
-    Yield: 3 Servings
+      <div class="grid-item ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>1 tablespoon canola oil</li>
+          <li>½ pound tofu, cut in small dice</li>
+          <li>1 large garlic clove, minced</li>
+          <li>1 teaspoon grated or minced fresh ginger</li>
+          <li>¼ teaspoon red chili flakes</li>
+          <li>Soy sauce to taste</li>
+          <li>16-ounce bag baby spinach, rinsed</li>
+          <li>2 tablespoons toasted sesame seeds</li>
+          <li>1 teaspoon sesame oil</li>
+        </ul>
+      </div>
 
-    Ingredients
+      <div class="grid-item preparation">
+        <h2>Preparation</h2>
+        
+        <h3>Step 1</h3>
 
-    1 tablespoon canola oil
-    ½ pound tofu, cut in small dice
-    1 large garlic clove, minced
-    1 teaspoon grated or minced fresh ginger
-    ¼ teaspoon red chili flakes
-    Soy sauce to taste
-    16-ounce bag baby spinach, rinsed
-    2 tablespoons toasted sesame seeds
-    1 teaspoon sesame oil
+        <p>
+          Heat the canola oil over medium-high heat in a large nonstick skillet or wok, and add the tofu. Stir-fry until the tofu is lightly colored, three to five minutes, and add the garlic, ginger and chili flakes. Cook, stirring, until fragrant, about one minute, and add soy sauce to taste. Add the spinach and stir-fry until the spinach wilts, about one minute. Stir in the sesame seeds, and add more soy sauce to taste. Remove from the heat.</p>
 
-    Preparation
+        <h3>Step 2</h3>
 
-    Step 1
+        <p>
+          Using tongs, transfer the spinach and tofu mixture to a serving bowl, leaving the liquid behind in the pan or wok. Drizzle with the sesame oil, and add more soy sauce as desired. Serve with rice or other grains, or noodles. You may also use it as a filling for whole wheat pita bread.</p>
 
-    Heat the canola oil over medium-high heat in a large nonstick skillet or wok, and add the tofu. Stir-fry until the tofu is lightly colored, three to five minutes, and add the garlic, ginger and chili flakes. Cook, stirring, until fragrant, about one minute, and add soy sauce to taste. Add the spinach and stir-fry until the spinach wilts, about one minute. Stir in the sesame seeds, and add more soy sauce to taste. Remove from the heat.
+        <h3>Tip</h3>
 
-    Step 2
+        <p>
+          Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance.</p>
 
-    Using tongs, transfer the spinach and tofu mixture to a serving bowl, leaving the liquid behind in the pan or wok. Drizzle with the sesame oil, and add more soy sauce as desired. Serve with rice or other grains, or noodles. You may also use it as a filling for whole wheat pita bread.
-
-    Tip
-
-    Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance.
-
-    Recipe source: https://cooking.nytimes.com/recipes/1012494-spinach-tofu-and-sesame-stir-fry
+        <p class="source">Recipe source: <a href="https://cooking.nytimes.com/recipes/1012494-spinach-tofu-and-sesame-stir-fry">https://cooking.nytimes.com/recipes/1012494-spinach-tofu-and-sesame-stir-fry</a></p>
+      </div>
+    </div>
   </body>
 </html>
